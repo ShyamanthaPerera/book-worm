@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="574.0" prefWidth="1000.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminController">
+   <children>
+      <AnchorPane fx:id="root" prefHeight="574.0" prefWidth="1000.0" style="-fx-background-radius: 5px; -fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="572.0" prefWidth="476.0" style="-fx-background-radius: 5px;">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="28.0" onAction="#btnHomeOnAction" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #6c5ce7;" text="    Home" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView layoutX="37.0" layoutY="36.0">
+                     <image>
+                        <Image url="@../images/icons8-home-25.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="606.0" layoutY="1.0" prefHeight="572.0" prefWidth="380.0" style="-fx-background-radius: 5px;">
+               <children>
+                  <TextField fx:id="txtUsername" layoutX="63.0" layoutY="216.0" prefHeight="46.0" prefWidth="272.0" promptText="Username" style="-fx-background-radius: 5px;" />
+                  <PasswordField fx:id="txtPassword" layoutX="63.0" layoutY="294.0" prefHeight="46.0" prefWidth="272.0" promptText="Password" style="-fx-background-radius: 5px;" />
+                  <PasswordField fx:id="txtConfirmPassword" layoutX="63.0" layoutY="376.0" prefHeight="46.0" prefWidth="272.0" promptText="Confirm Password" style="-fx-background-radius: 5px;" />
+                  <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="460.0" onAction="#btnSIgnUpAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-radius: 10px; -fx-background-color: #4532CA;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton layoutX="241.0" layoutY="521.0" onAction="#btnSIgnInOnAction" prefHeight="30.0" prefWidth="66.0" text="Sign In" textFill="#0d0bae">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+                  <Label layoutX="91.0" layoutY="526.0" text="If you have an account ?">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

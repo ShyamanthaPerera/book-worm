@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="574.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.MainWindowController">
+   <children>
+      <AnchorPane fx:id="root" prefHeight="574.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="314.0" layoutY="160.0" prefHeight="38.0" prefWidth="373.0" text="Welcome back to your Library">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="235.0" layoutY="356.0" onAction="#adminOnAction" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #2980b9;" text=" Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="356.0" onAction="#userOnAction" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #2980b9;" text="  User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <Separator layoutX="498.0" layoutY="242.0" orientation="VERTICAL" prefHeight="318.0" prefWidth="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

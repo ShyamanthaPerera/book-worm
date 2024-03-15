@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SearchFormController">
+   <children>
+      <Label layoutX="39.0" layoutY="114.0" prefHeight="51.0" prefWidth="522.0" text="Enter your Username And Book Name to confirm">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="39.0" layoutY="177.0" prefHeight="41.0" prefWidth="252.0" promptText="Username" style="-fx-background-radius: 10px;" />
+      <JFXButton buttonType="RAISED" layoutX="249.0" layoutY="245.0" onAction="#btnConfirmOnAction" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 10px;" text="Confirm">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtTitle" layoutX="309.0" layoutY="177.0" prefHeight="41.0" prefWidth="252.0" promptText="Book Title" style="-fx-background-radius: 10px;" />
+   </children>
+</AnchorPane>
